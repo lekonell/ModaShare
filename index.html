@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="./favicon.ico">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#dcedf5">
+        <meta name="description" content="modaweb.kr file sharing service">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <title>ModaShare</title>
+        <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="./js/app.js?2022081602"></script>
+        <link rel="stylesheet" href="./css/main.css?2022081601">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSC7SSYPSS"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-GSC7SSYPSS');
+		</script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="upload-box">
+            <div class="upload-wrap">
+                <h1>ModaShare Service</h1>
+                <div class="file-selector">
+                    <input class="btn-file" type="file">
+                    <p class="file-desc"></p>
+                </div>
+                <div class="upload-options">
+                    <input class="input-timeout" value="5">
+                    <span class="btn-timeout" data-multiplier="1">초</span>
+                    <span class="btn-timeout active" data-multiplier="60">분</span>
+                    <span class="btn-timeout" data-multiplier="3600">시</span>
+                    <span class="btn-timeout" data-multiplier="86400">일</span>
+                    <span class="btn-timeout" data-multiplier="604800">주</span>
+                    <span class="btn-timeout" data-multiplier="09">영구</span>
+                    <span class="btn-upload">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M8 10h-5l9-10 9 10h-5v10h-8v-10zm8 12h-8v2h8v-2z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="upload-results">
+                    <div class="upload-progress">
+                        <div class="upload-progress-level"></div>
+                        <span class="upload-progress-text">44%</span>
+                    </div>
+                    <p class="upload-result"></p>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <div class="tooltip-wrap">
+                <p class="context"></p>
+                <div class="tooltip-arrow"></div>
+            </div>
+        </div>
+    </body>
+</html>
